@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 33.33vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    width: 75%;
+    margin: 2em 0em;
+}
+
+section:first-child{
+    background-color: blue;
+    gap: 2em;
+    width: 75%;
+}
+
+section:nth-child(2){
+    background-color: rgb(255, 187, 0);
+}
+
+section:nth-child(3){
+    background-color: aquamarine;
+}
+
+span{
+    color: red;
+}
+
+table{
+    height: 25vh;
+    width: 75%;
+}
+
+table, th, td{
+    border: 3px solid blue;
+    border-collapse: collapse;
+    padding: .1875rem;
+    text-align: center;
+}
+
+.table-cell:hover{
+    box-shadow: 0px 2px 68px -13px rgba(208,24,205,0.95) inset;
+    -webkit-box-shadow: 0px 2px 68px -13px rgba(208,24,205,0.95) inset;
+    -moz-box-shadow: 0px 2px 68px -13px rgba(208,24,205,0.95) inset;
+    cursor: pointer;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: blueviolet;
+    color: white;
+}
+
+tbody > tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+
+thead{
+    background-color: blanchedalmond;
+}
+
+thead > tr{
+        font-size: 1.50rem;
+}
+
+p{
+    width: 75%;
+}
+
+.name:hover{
+    color: white;
+    background-color: rgb(2, 2, 114);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.name{
+    width: 100%;
+    text-align: left;
+}
+
+.img-container{
+    display: flex;
+    height: 33.33vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    max-height: 50%;
+}
