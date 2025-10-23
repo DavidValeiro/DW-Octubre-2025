@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Functionality */
+
+.text-hover:hover{
+    color: rgb(156, 132, 95);
+    transition: 200ms;
+}
+
+/* Header */
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Lilita One", sans-serif;
+}
+
+a.active{
+    text-decoration: underline;
+}
+
+nav > a{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 0.5em;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20vw 0 1em;
+}
+
+nav img{
+    height: 3.125rem;
+    margin-left: 0.5em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+/* Main */
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    scroll-margin-top: 10vh;
+}
+
+#section1{
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+#section2{
+    flex-direction: row-reverse;
+}
+
+section h2{
+    font-family: "Lilita One", sans-serif;
+}
+
+section p{
+    width: 50%;
+}
+
+section div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+}
+
+#section2 div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    text-align: end;
+}
+
+section div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section div img{
+    width: 15vw;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+form input:nth-child(2){
+    margin-left: 1em;
+}
+
+form input{
+    margin-right: 0.3em;
+}
+
+/* Footer */
+
+footer{
+    background-color: blanchedalmond;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+}
+
+
+/* Robao de Codepen https://codepen.io/ainalem/pen/jwoqKz */
+
+#contact-body{
+    height: 100vh;
+    display: flex;
+}
+
+#contact-body nav{
+    background-color: #a6d7ff;
+}
+
+#contact-body footer{
+    background-color: #a6d7ff;
+}
+
+#contact-body div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.contact-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.shape {
+  display: block;
+  fill: #2095F2;
+  margin: 0 auto;
+}
+
+.shape1 {
+  animation: rotate 1500ms infinite;
+  margin-top: 50px;
+}
+
+.shape2 {
+  animation: rotateScale 1500ms infinite;
+  fill: #ccc;
+  filter: blur(4px);
+  margin-top: 10px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateScale {
+  0% {
+    transform: scaleY(0.2) rotate(0deg);
+  }
+  100% {
+    transform: scaleY(0.2) rotate(360deg);
+  }
+}
