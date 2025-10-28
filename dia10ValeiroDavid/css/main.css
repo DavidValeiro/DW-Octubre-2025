@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.caja{
+    width: 20px;
+    font-size: 10px;
+}
+
+.caja p{
+    font-size: 2em;
+}
+
+.caja2{
+    width: 50vw;
+    padding: calc(2rem + 5px);
+    background-color: lightgreen;
+}
+
+h1{
+    font-size: calc(2vw + 10px);
+}
