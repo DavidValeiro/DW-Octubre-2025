@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* * NIVELES 1, 2 y 3 */
+
+/* body{
+    height: 300vh;
+} */
+
+/* * NIVEL 1 */
+
+/* p{
+    background-color: lightcoral;
+    text-align: center;
+}   
+
+p:first-child{
+    position: absolute;
+    inset: 50px auto auto 25vw;
+}
+
+p:nth-child(2){
+    position: absolute;
+    inset: auto 25vw 50px auto;
+} */
+
+/* * NIVEL 2  */
+
+/* div{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    text-align: center;
+    padding-top: 42px;
+}
+
+div:first-child{
+    position: absolute;
+    inset: 0 auto auto 0;
+}
+
+div:nth-child(2){
+    position: absolute;
+    inset: 0 0 auto auto;
+}
+
+div:nth-child(3){
+    position: absolute;
+    inset: auto 0 0 auto;
+}
+
+div:nth-child(4){
+    position: absolute;
+    inset: auto auto 0 0;
+}
+
+div:nth-child(5){
+    position: fixed;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* * NIVEL 3  */
+
+/* section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+p{
+    width: 50%;
+    justify-self: center;
+    margin-top: 10vh;
+}
+
+h1{
+    text-align: center;
+    padding: 3em;
+    background-color: lightcoral;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background-color: lightcoral;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+} */
+
+/* * BODY SCROLL SNAP */
+
+/* * SCROLL SNAP  */
+
+section{
+    scroll-snap-type: Y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+div{
+    scroll-snap-align: start;
+    height: 100vh;
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div:nth-child(1){
+    background-color: lightcoral;
+}
+
+div:nth-child(2){
+    background-color: lightseagreen;
+}
+
+div:nth-child(3){
+    background-color: lightblue;
+}
+
+div:nth-child(4){
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+div:nth-child(5){
+    background-color: rgb(206, 120, 253);
+}
