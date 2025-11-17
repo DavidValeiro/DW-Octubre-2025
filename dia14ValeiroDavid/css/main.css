@@ -22,13 +22,14 @@ div{
 .icon{
     width: 100px;
     padding: 1em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(255, 0, 234, 0.877);
     position: fixed;
     inset: 30px auto auto 30px;
     overflow: visible;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
     background-color: white;
+    z-index: 9999;
 
     &:hover{
         transform: scale(1.1);
@@ -46,9 +47,26 @@ p{
     padding: 0 5em 0 5em;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 a:nth-child(even) p{
     background-color: lightcoral;
 }
 a:nth-child(odd) p{
     background-color: lightseagreen;
 }
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: 50% 50%;
+}       
