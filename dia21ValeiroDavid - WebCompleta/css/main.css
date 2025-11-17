@@ -1,0 +1,202 @@
+:root {
+  --dur: .3s;
+  --color-oscuro: #2f2f2f;
+  --color-claro: #fff;
+  --color-acento: #ffae00;
+  --font-fam: "Press Start 2P", system-ui;
+  --height: 1rem;
+  --btn-width: 4rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  --rad: 15px;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.google-sans-flex {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.nav-search-bar {
+  position: relative;
+  background-color: var(--color-acento);
+  width: 300px;
+  border-radius: 25px;
+
+    input, button {
+    height: 2rem;
+    font-family: var(--font-fam);
+    border: 0;
+    color: var(--color-oscuro);
+    font-size: 1rem;
+    outline: 0;
+    }
+
+    input[type="search"] {
+    border: 3px solid var(--color-acento);
+    width: 100%;
+    background: var(--color-claro);
+    border-radius: 25px;
+    padding: 0 1.6rem;
+    transition: all var(--dur) var(--bez);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+    }
+
+    button {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: var(--btn-width);
+    background: var(--color-acento);
+    }
+
+    input:not(:placeholder-shown) {
+    width: calc(100% - var(--btn-width));
+    + button {
+        display: block;
+    }
+    }
+    
+    label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    }
+}
+
+body {
+    background-image:url(../media/images/fondo.jpg);
+    background-color: rgba(255,255,255,0.95);
+    background-blend-mode: lighten;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem 0 0;
+    background-color: #fff;
+    box-shadow: 0px -4px 19px 9px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px -4px 19px 9px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -4px 19px 9px rgba(0,0,0,0.2);
+}
+
+.nav-web-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-web-name .icono {
+    width: 100px;
+    stroke: var(--color-acento);
+}
+
+.nav-title {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+    color: var(--color-oscuro);
+}
+
+
+.pixel {
+    font-family: "Press Start 2P", system-ui;
+    color: var(--color-acento);
+} 
+
+.article {
+    background-color: var(--color-claro);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: var(--rad);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border: var(--color-acento) 6px solid;
+    width: fit-content;
+}
+
+.introduction {
+    width: 33vw;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.box {
+    border: var(--color-claro) 6px solid;
+    border-radius: var(--rad);
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.consoles{
+    position: relative;
+    z-index: 0; 
+    overflow: hidden;
+    display: flex;
+}
+.consoles:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/images/Consoles.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: sepia(100%) blur(1px) brightness(72%) hue-rotate(175deg) saturate(417%) contrast(128%);
+    z-index: -1;
+}
+
+.consoles h2{
+    color: var(--color-claro);
+    align-self: center;
+    justify-self: center;
+    margin-left: 0.3rem;
+    font-weight: 800;
+}
+
+.emulators{
+    background-image: url(../media/images/yuzu.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    backdrop-filter: sepia(100%) blur(1px) brightness(72%) hue-rotate(122deg) saturate(417%) contrast(128%);
+}
+
+

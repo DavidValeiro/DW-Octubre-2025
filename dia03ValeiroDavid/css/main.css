@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: lightblue;
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    border: 5px solid black;
+}
+
+div div{
+    background-color: lightcoral;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    border: 5px dotted black;
+}

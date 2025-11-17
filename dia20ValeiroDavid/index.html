@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- ? Conjunto de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ? Etiqueta de compatibilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Valeiro Sanjurjo</title>
+    <link rel="icon" type="image/png" href="media/images/favicon.png">
+    <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- ? Tipografía fea con ganas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+      <!-- ? El defer es el wait onload  -->
+</head>
+
+<body>
+  <main>
+    <div>
+      <h2>Formulario de Contacto</h2>
+      <form method="post" action="/action_page.php" enctype="multipart/form-data">
+        <label for="nombre"></label>
+        <input type="text" name="nombre" placeholder="Nombre y Apellidos" id="nombre" required>
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Correo Electrónico" id="email" required>
+        <label for="telf"></label>
+        <input type="tel" name="telefono" placeholder="Número de Teléfono" id="telf" required>
+        <label for="mensaje"></label>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." id="mensaje"></textarea>
+        <button type="submit" >Enviar</button>
+      </form>
+    </div>
+    
+    <div>
+      <h2>Formulario de Registro</h2>
+      <form method="post" action="/register_page.php" enctype="multipart/form-data">
+        <label for="user"></label>
+        <input type="text" name="username" placeholder="Nombre de Usuario" id="user" required>
+        <label for="pass"></label>
+        <input type="password" name="password" placeholder="Contraseña" id="pass" required>
+        <label for="email"></label>
+        <input type="email" name="email" placeholder="Correo Electrónico" id="email" required>
+        <label for="confirm_email"></label>
+        <input type="email" name="confirm_email" placeholder="Confirmar Correo Electrónico" id="confirm_email" required>
+        <label for="birthdate"></label>
+        <input type="date" name="birthdate" placeholder="Fecha de Nacimiento" id="birthdate" required>
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Formulario de Inicio de Sesión</h2>
+      <form method="post" action="/login_page.php">
+        <label for="userlog"></label>
+        <input type="text" name="username" placeholder="Nombre de Usuario" id="userlog" required>
+        <label for="passlog"></label>
+        <input type="password" name="password" placeholder="Contraseña" id="passlog" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

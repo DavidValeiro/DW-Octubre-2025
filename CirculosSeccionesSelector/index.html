@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- ? Conjunto de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ? Etiqueta de compatibilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Valeiro Sanjurjo</title>
+    <link rel="icon" type="image/png" href="media/images/favicon.png">
+    <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- ? Tipografía fea con ganas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+      <!-- ? El defer es el wait onload  -->
+</head>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #contenedor {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-timeline: --circuloTimeline y;
+      position: relative;
+    }
+
+    .circulo {
+      width: 30px;
+      height: 30px;      
+      background-color: rgb(30, 144, 255);
+      border-radius: 50%;
+    }
+
+    #circulos {
+      position: fixed;
+      top: calc(50vh - 65px);
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #relleno {
+      height: 200vh;
+      background: #f0f0f0;
+    }
+
+    .uno{      
+      animation-name: fadeAnimation1;
+      animation-duration: 1s;
+      animation-timeline: --circuloTimeline;
+    }
+
+    .dos {
+      animation-name: fadeAnimation2;
+      animation-duration: 1s;
+      animation-timeline: --circuloTimeline;
+    }
+
+    .tres {
+      animation-name: fadeAnimation3;
+      animation-duration: 1s;
+      animation-timeline: --circuloTimeline;
+    }
+
+    @keyframes fadeAnimation1 {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes fadeAnimation2 {
+      0% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes fadeAnimation3 {
+      0% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="contenedor">
+    <div id="circulos">
+      <div class="circulo uno"></div>
+      <div class="circulo dos"></div>
+      <div class="circulo tres"></div>
+    </div>
+    <div id="relleno"></div>
+  </div>
+</body>
+
+</html>
