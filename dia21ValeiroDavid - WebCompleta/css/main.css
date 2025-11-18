@@ -24,9 +24,18 @@
     scroll-behavior: smooth;
 }
 
+.accent-centering{
+    display: flex;
+    align-items: center;
+}
+
 a{
     text-decoration: none;
     color: unset;
+}
+
+.max-w100{
+    max-width: 100%;
 }
 
 .press-start-2p {
@@ -56,12 +65,18 @@ a{
 .console-news-accent{
     color: var(--console);
 }
+.console-bc{
+    background-color: var(--console);
+}
 
 .emulator-news{
     border: solid 8px  var(--emulator);
 }
 .emulator-news-accent{
     color: var(--emulator);
+}
+.emulator-bc{
+    background-color: var(--emulator);
 }
 
 .roms-news{
@@ -70,12 +85,28 @@ a{
 .roms-news-accent{
     color: var(--roms);
 }
+.roms-bc{
+    background-color: var(--roms);
+}
 
 .emula2-news{
     border: solid 8px var(--color-acento);
 }
 .emula2-news-accent{
     color: var(--color-acento);
+}
+.emula2-bc{
+    background-color: var(--color-acento);
+}
+
+.profile-news{
+    border: solid 8px var(--profile);
+}
+.profile-news-accent{
+    color: var(--profile);
+}
+.profile-bc{
+    background-color: var(--profile);
 }
 
 
@@ -182,7 +213,6 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin: 2rem 0 2rem 0;
 }
 .box {
     border-radius: var(--rad);  
@@ -280,11 +310,12 @@ main{
 section{
     column-count: 2;
     height: fit-content;
+    margin: 1rem 0 2rem 0;
 }
 
 .block {
     background-color: var(--color-claro);
-    margin: 1rem;
+    margin: 1rem 0 0 0;
     padding: 2rem;
     border-radius: var(--rad);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
@@ -295,7 +326,6 @@ section{
     break-inside: avoid;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-
 .block:hover{
     transform: scale(1.005);
     box-shadow: 1px 1px 32px 0px rgba(74,72,57,0.49);
@@ -308,13 +338,11 @@ section{
     gap: 20px;
     margin: 0.5rem 0 0 0;
 }
-
 .article-content figure{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .article-content-img{
    width: 400px;
 }
@@ -328,23 +356,100 @@ section{
     min-height: 50vh;
     height: fit-content;
     flex-direction: column;
-    margin: 0 0 2rem 0;
+    margin: 2rem 0 2rem 0;
 }
-
 .block-news-content{
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin: 0.5rem 0 0 0;
 }
-
 .block-news-content figure{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 .block-news-content-img{
     width: 100%;
+}
+
+
+.form-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+.block-profile {
+    background-color: var(--color-claro);
+    padding: 2rem;
+    border-radius: var(--rad);
+    box-shadow: 1px 1px 32px 0px rgba(74,72,57,0.49);
+    height: fit-content;
+    flex-direction: column;
+    justify-self: center;
+    margin: 3rem 0 0 0;
+}
+.block-form{
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.form-button {
+    padding: 0.4rem;
+    border: none;
+    border-radius: var(--rad);
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 0px rgba(46, 204, 113, 0.7);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.form-button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.7);
+}
+.form-input{
+    padding: 0.5rem;
+    border-radius: var(--rad);
+    border: var(--color-oscuro) solid 2px;
+}
+.register-input:focus {
+    outline: none;
+    border: 2px solid var(--color-claro);   /* tu color verde */
+    box-shadow: 0 0 6px var(--color-acento);
+    transition: 0.2s ease;
+}
+.login-input:focus {
+    outline: none;
+    border: 2px solid var(--color-claro);   /* tu color verde */
+    box-shadow: 0 0 6px var(--profile);
+    transition: 0.2s ease;
+}
+.contact-mail{
+    margin: 20px 0 0 0;
+}
+.contact-button {
+    padding: 0.4rem;
+    border: none;
+    border-radius: var(--rad);
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 0px rgba(255, 217, 135, 0.7);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.contact-button:hover {
+    background-color: rgb(255, 217, 135);
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px rgba(255, 217, 135, 0.7);
+}
+
+.form-textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 4rem;
+    font-size: 1.1rem;
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- ? Conjunto de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ? Etiqueta de compatibilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emula2</title>
+    <link rel="icon" type="image/png" href="media/images/icono.svg">
+    <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- ? Tipografía fea con ganas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+      <!-- ? El defer es el wait onload  -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><div class="nav-web-name">
+        <svg width="120" height="120" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" class="icono">
+          <rect x="8" y="15" width="24" height="10" fill="none" stroke="" stroke-width="2"/>
+          <line x1="13" y1="17" x2="13" y2="23" stroke="" stroke-width="2"/>
+          <line x1="10" y1="20" x2="16" y2="20" stroke="" stroke-width="2"/>
+          <rect x="23" y="19" width="1" height="1" fill="none" stroke="" stroke-width="2"/>
+          <rect x="27" y="19" width="1" height="1" fill="none" stroke="" stroke-width="2"/>
+        </svg>
+        <h1 class="nav-title">EMULA2</h1>
+      </div></a>
+      <form onsubmit="" role="search" class="nav-search-bar">
+        <label for="search">Buscador</label>
+        <input id="search" type="search" placeholder="Busca..." autofocus required />
+        <button type="submit">Go</button>    
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <div class="box-container">
+      <a href="index.html"><div class="box consoles google-sans-flex"><h2>Consola</h2></div></a>
+      <a href="index.html"><div class="box emulators google-sans-flex"><h2>Emulador</h2></div></a>
+      <a href="index.html"><div class="box roms google-sans-flex"><h2>ROMs</h2></div></a>
+      <a href="index.html"><div class="box contacto google-sans-flex"><h2>Contacto</h2></div></a>
+      <a href="login.html"><div class="box perfil google-sans-flex"><h2>Perfil</h2></div></a>
+    </div>
+
+    <div class="block-profile google-sans-flex emula2-news max-w100">
+      <h2 class="pixel emula2-news-accent">Contáctanos</h2>
+      <form action="#" method="POST" class="block-form">
+          <input type="text" name="nombre" placeholder="Tu nombre" required class="form-input register-input pixel" >
+          <input type="email" name="email" placeholder="Tu correo" required class="form-input register-input pixel">
+          <input type="text" name="asunto" placeholder="Tema del mensaje" required class="form-input register-input pixel">
+          <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required class="form-input register-input form-textarea"></textarea>
+          <button class="contact-button emula2-bc pixel" type="submit">Enviar</button>
+      </form>
+      <p class="contact-mail">También puedes escribirnos a: &nbsp;<strong class="pixel emula2-news-accent">emula2@gmail.com</strong></p>
+  </div>
+
+    
+  </main>
+
+</body>
+
+</html>
