@@ -21,7 +21,7 @@
 <body>
   <header>
     <nav>
-      <div class="nav-web-name">
+      <a href="#"><div class="nav-web-name">
         <svg width="120" height="120" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" class="icono">
           <rect x="8" y="15" width="24" height="10" fill="none" stroke="" stroke-width="2"/>
           <line x1="13" y1="17" x2="13" y2="23" stroke="" stroke-width="2"/>
@@ -29,8 +29,8 @@
           <rect x="23" y="19" width="1" height="1" fill="none" stroke="" stroke-width="2"/>
           <rect x="27" y="19" width="1" height="1" fill="none" stroke="" stroke-width="2"/>
         </svg>
-        <h1 class="nav-title">Emula2</h1>
-      </div>
+        <h1 class="nav-title">EMULA2</h1>
+      </div></a>
       <form onsubmit="" role="search" class="nav-search-bar">
         <label for="search">Buscador</label>
         <input id="search" type="search" placeholder="Busca..." autofocus required />
@@ -41,19 +41,64 @@
 
   <main>
     <div class="box-container">
-      <div class="box consoles google-sans-flex"><h2>Consoles</h2></div>
-      <div class="box emulators"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+      <a href=""><div class="box consoles google-sans-flex"><h2>Consola</h2></div></a>
+      <a href=""><div class="box emulators google-sans-flex"><h2>Emulador</h2></div></a>
+      <a href=""><div class="box roms google-sans-flex"><h2>ROMs</h2></div></a>
+      <a href=""><div class="box contacto google-sans-flex"><h2>Contacto</h2></div></a>
+      <a href=""><div class="box perfil google-sans-flex"><h2>Perfil</h2></div></a>
     </div>
 
-    <div class="article google-sans-flex introduction">
-      <h2>Bienvenido a &nbsp;<span class="pixel">Emula2</span></h2>
-      <p>Tu portal de emulación favorito. Aquí encontrarás recursos, guías y noticias sobre emuladores de videojuegos.</p>
-    </div>
+    <section class="section-grid">
+      <a href="noticia.html">
+        <div class="block google-sans-flex emula2-news">
+          <h2>Bienvenido a &nbsp;<span class="pixel emula2-news-accent">EMULA2</span></h2>
+          <p class="article-content">Tu portal de emulación favorito. Aquí encontrarás recursos, guías y noticias sobre emuladores de videojuegos.</p>
+        </div>
+      </a>
 
+      <a href="noticia.html">
+        <article class="block google-sans-flex console-news">
+          <h3>Adiós &nbsp;<span class="pixel console-news-accent">3DS...</span>(Es broma, Nintendo)</h3>
+          <div class="article-content">
+            <p>La compañía AYN ha anunciado el lanzamiento oficial de su nueva consola portátil AYN Thor, un dispositivo de doble pantalla que combina un diseño retro tipo “clamshell” con hardware moderno. El modelo destaca por integrar una pantalla principal AMOLED de 6 pulgadas a 120 Hz y una secundaria de casi 4 pulgadas, ideal para funciones adicionales, mapas o controles rápidos. La familia Thor incluye cuatro versiones —Lite, Base, Pro y Max— que van desde los 249 hasta los 429 dólares, todas equipadas con batería de 6.000 mAh, Android 13 y joysticks de efecto Hall.</p>
 
+            <p>Los modelos Base, Pro y Max emplean el potente procesador Snapdragon 8 Gen 2, mientras que la versión Lite monta un Snapdragon 865 orientado a un rendimiento más equilibrado. Su diseño estará disponible en varios colores, incluido un llamativo acabado transparente que recuerda a la clásica Game Boy Color. La AYN Thor, que ya abrió su periodo de reservas, apunta a convertirse en una de las consolas Android más versátiles del año gracias a su enfoque en la emulación avanzada y su doble pantalla pensada para enriquecer la experiencia de juego.</p>
+            <figure>
+              <img src="media/images/ayn.png" alt="ayn thor consola emuladora" class="article-content-img">
+            </figure>
+          </div>
+        </article>
+      </a>
+      
+      <a href="noticia.html">
+        <article class="block google-sans-flex emulator-news">
+          <h3>Bienvenido al &nbsp;<span class="pixel emulator-news-accent">Eden...</span></h3>
+          <div class="article-content">        
+            <p>La comunidad del emulador está de enhorabuena con el lanzamiento de Eden, un nuevo emulador open-source de Nintendo Switch que irrumpe con fuerza gracias a su rendimiento optimizado y su enfoque multiplataforma. Originado como un fork de Yuzu, Eden debutó en versión pre-alpha el 10 de mayo de 2025, y ya ofrece versiones para Windows, Linux y Android, integrando renderizado Vulkan y un diseño pensado tanto para PC como para dispositivos móviles.
+            </p> 
+            <p>Entre sus principales virtudes destacan una interfaz moderna y fluida, caché de shaders optimizada y una arquitectura modular que permite adaptarse al hardware del usuario. 
+            Aunque aún está en fase temprana, ya se han reportado títulos jugables y un desarrollo activo, con planes futuros para incorporar funciones como netplay cooperativo y traducción de shaders en tiempo real. 
+            </p>
+            <figure>
+              <img src="media/images/eden.jpg" alt="nuevo emulador eden" class="article-content-img">
+            </figure>
+          </div>
+        </article>
+      </a>
+      
+      <a href="noticia.html">
+        <article class="block google-sans-flex roms-news">
+          <h3>Ya ha llegado&nbsp;<span class="pixel roms-news-accent">RetroVault</span></h3>
+          <div class="article-content">
+            <p>La comunidad gamer ha recibido con entusiasmo el lanzamiento de RetroVault, una nueva página web dedicada a la descarga de ROMs de consolas clásicas. La plataforma promete una experiencia segura y organizada, con títulos de consolas como NES, SNES, Game Boy, Sega Genesis y más, acompañados de descripciones detalladas, capturas de pantalla y valoraciones de usuarios. RetroVault destaca por su buscador avanzado, filtros por género y año de lanzamiento, y un sistema de “colecciones” que permite a los usuarios crear listas personalizadas de sus juegos favoritos.</p>
+            <p>Además, RetroVault ofrece compatibilidad directa con los emuladores más populares y cuenta con una sección de noticias y guías para optimizar la experiencia de juego retro. La web apuesta por un diseño moderno y responsivo, accesible desde dispositivos móviles y PC, y asegura actualizaciones semanales con nuevos títulos y mejoras de seguridad. Desde su apertura, la plataforma ya ha atraído a miles de usuarios interesados en revivir la nostalgia de los videojuegos clásicos de manera práctica y confiable.</p>
+            <figure>
+              <img src="media/images/retroVault.png" alt="icono nueva pagina de roms retrovault" class="article-content-img">
+            </figure>
+          </div>
+        </article>
+      </a>
+    </section>
   </main>
 
 </body>

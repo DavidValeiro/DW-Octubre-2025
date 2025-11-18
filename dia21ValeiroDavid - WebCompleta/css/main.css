@@ -8,6 +8,13 @@
   --btn-width: 4rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
   --rad: 15px;
+  --blur: 3px;
+  --hue: 122deg;
+  --filters-base: sepia(100%) brightness(72%) saturate(417%) contrast(128%) saturate(40%);
+  --console: #4848b3;
+  --emulator: #c71cb9;
+  --roms: #ff0800;
+  --profile: #1cad3c;
 }
 
 *{
@@ -17,7 +24,12 @@
     scroll-behavior: smooth;
 }
 
-.press-start-2p-regular {
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.press-start-2p {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -34,6 +46,38 @@
     "GRAD" 0,
     "ROND" 0;
 }
+.pixel {
+    font-family: "Press Start 2P", system-ui;
+} 
+
+.console-news{
+    border: solid 8px  var(--console);
+}
+.console-news-accent{
+    color: var(--console);
+}
+
+.emulator-news{
+    border: solid 8px  var(--emulator);
+}
+.emulator-news-accent{
+    color: var(--emulator);
+}
+
+.roms-news{
+    border: solid 8px  var(--roms);
+}
+.roms-news-accent{
+    color: var(--roms);
+}
+
+.emula2-news{
+    border: solid 8px var(--color-acento);
+}
+.emula2-news-accent{
+    color: var(--color-acento);
+}
+
 
 .nav-search-bar {
   position: relative;
@@ -94,109 +138,213 @@ body {
     background-color: rgba(255,255,255,0.95);
     background-blend-mode: lighten;
 }
-
 nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
     padding: 0 2rem 0 0;
     background-color: #fff;
     box-shadow: 0px -4px 19px 9px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0px -4px 19px 9px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px -4px 19px 9px rgba(0,0,0,0.2);
 }
-
 .nav-web-name {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.3rem;
+    padding-left: 1rem;
+    cursor: pointer;
 }
-
 .nav-web-name .icono {
-    width: 100px;
+    height: 120px;
     stroke: var(--color-acento);
 }
-
 .nav-title {
     font-family: "Press Start 2P", system-ui;
     font-size: 2rem;
     color: var(--color-oscuro);
+    margin-top: 3px;
 }
 
-
-.pixel {
-    font-family: "Press Start 2P", system-ui;
-    color: var(--color-acento);
-} 
-
-.article {
-    background-color: var(--color-claro);
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: var(--rad);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    border: var(--color-acento) 6px solid;
-    width: fit-content;
-}
-
-.introduction {
-    width: 33vw;
+main{
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+    margin: calc(8vh + 2rem) 0 0 0;
 }
 
 .box-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 2rem 0 2rem 0;
 }
-
 .box {
-    border: var(--color-claro) 6px solid;
-    border-radius: var(--rad);
-    padding: 1rem;
-    margin: 2rem 0 1rem 0;
+    border-radius: var(--rad);  
     width: 10rem;
     aspect-ratio: 1 / 1;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-
-.consoles{
+    box-shadow: 2px 1px 6px 2px rgba(0,0,0,0.25);
     position: relative;
     z-index: 0; 
     overflow: hidden;
     display: flex;
-}
-.consoles:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../media/images/Consoles.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: sepia(100%) blur(1px) brightness(72%) hue-rotate(175deg) saturate(417%) contrast(128%);
-    z-index: -1;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out ;
 }
 
-.consoles h2{
+.box::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 105%;
+    height: 105%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: var(--filters-base) hue-rotate(var(--hue)) blur(var(--blur));
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+.box:hover::before{
+    --blur:0px;
+    filter: var(--filters-base) hue-rotate(var(--hue)) blur(var(--blur));
+    transform: scale(1.07);
+}
+.box h2{
     color: var(--color-claro);
     align-self: center;
+    font-size: 1rem;
+    padding: 0 1rem 0 auto;
+    font-family: "Press Start 2P", system-ui;
     justify-self: center;
-    margin-left: 0.3rem;
-    font-weight: 800;
+    margin: auto;
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+.box:hover h2{
+    opacity: 0;
+}
+
+.consoles{
+    border: solid 8px  var(--console);
+    font-size: auto;
+}
+.consoles:before{
+    background-image: url(../media/images/Consoles.jpg);
+    --hue: 175deg;
 }
 
 .emulators{
+    border: solid 8px  var(--emulator);
+}
+.emulators::before{
     background-image: url(../media/images/yuzu.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
-    backdrop-filter: sepia(100%) blur(1px) brightness(72%) hue-rotate(122deg) saturate(417%) contrast(128%);
+    --hue:280deg;
+} 
+
+.roms{
+    border: solid 8px  var(--roms);
+}
+.roms:before{
+    background-image: url(../media/images/archivos.jpg);
+    --hue: 300deg;
+}
+
+.contacto{
+    border: solid 8px  var(--color-acento);
+}
+.contacto:before{
+    background-image: url(../media/images/contacto.jpg);
+    --hue:340deg;
+}
+
+.perfil{
+    border: solid 8px  var(--profile);
+}
+.perfil:before{
+    background-image: url(../media/images/profile.jpg);
+    --hue: 100deg;
+}
+
+section{
+    column-count: 2;
+    height: fit-content;
+}
+
+.block {
+    background-color: var(--color-claro);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: var(--rad);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 0px 0px rgba(74,72,57,0.49) ;
+    height: fit-content;
+    display: inline-block;
+    flex-direction: column;
+    break-inside: avoid;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.block:hover{
+    transform: scale(1.005);
+    box-shadow: 1px 1px 32px 0px rgba(74,72,57,0.49);
+    cursor: pointer;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0.5rem 0 0 0;
+}
+
+.article-content figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-content-img{
+   width: 400px;
+}
+
+.block-news{
+    background-color: var(--color-claro);
+    padding: 2rem;
+    border-radius: var(--rad);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    min-height: 50vh;
+    height: fit-content;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+}
+
+.block-news-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0.5rem 0 0 0;
+}
+
+.block-news-content figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+.block-news-content-img{
+    width: 100%;
+}
