@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.box-caja{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.caja{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 0.5rem;
+    margin: 4rem 0 0rem 0;
+    font-size: larger;
+    font-weight: 600;
+}

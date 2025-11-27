@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.random-color-button--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+
+.random-color-button{
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: rgb(165, 42, 42);
+    color: blanchedalmond;
+    border: rgb(104, 21, 21) 4px solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.random-color-div-button--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.random-color-div--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+
+.random-color-div{
+    height: 100px;
+    aspect-ratio: 1 / 1;
+    background-color: brown;
+}

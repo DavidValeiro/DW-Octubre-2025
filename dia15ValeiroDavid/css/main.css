@@ -4,3 +4,20 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+picture{
+    width: 30%;
+    height: auto;
+}
+
+picture img{
+    width: 100%;
+    height: auto;
+}
