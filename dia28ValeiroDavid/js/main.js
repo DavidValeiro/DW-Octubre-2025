@@ -18,8 +18,11 @@ const randomColorDivButton = document.querySelector("#random-color-div-button");
 const divs = document.querySelectorAll(".random-color-div");
 
 function divsRandomColor(){
-    divs.forEach(div => bgChange(div))
+    divs.forEach(div => {
+        bgChange({ target: div });
+    });
 }
 
 randomColorDivButton.addEventListener("click", divsRandomColor);
+divs.forEach(div => div.addEventListener("click", bgChange));
 
