@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- ? Conjunto de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ? Etiqueta de compatibilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Valeiro Sanjurjo</title>
+    <link rel="icon" type="image/png" href="media/images/favicon.png">
+    <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- ? Tipografía fea con ganas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <!-- ? El defer es el wait onload  -->
+</head>
+
+<body>
+    <main>
+        <button id="open" class="ej-uno">BOM-OPEN</button>
+        <button id="close" class="ej-uno">BOM-CLOSE</button>
+        <button id="move" class="ej-uno">BOM-MOVE</button>
+        <button id="resize" class="ej-uno">BOM-RESIZE</button>
+        <button id="location" class="ej-uno">BOM-LOCATION</button>
+
+        <div class="rn-container">
+            <div class="random-number"></div>
+            <div class="random-number"></div>
+            <div class="random-number"></div>
+            <div class="random-number"></div>
+            <div class="random-number"></div>
+        </div>
+        <button id="rn-generator">RANDOM-NUMBER</button>
+
+        <div class="calculator">
+            <input type="number" id="first-number">
+            <select name="select" id="select-operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" id="second-number">
+            <button id="calc">Calcular</button>
+            <input placeholder="Resultado" type="text" id="show-resultado" disabled>
+        </div>
+    </main>
+</body>
+
+</html>

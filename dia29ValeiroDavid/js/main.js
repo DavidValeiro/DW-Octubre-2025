@@ -16,7 +16,7 @@ console.log(pares);
 
 
 
-let size = 5; 
+let size = 20; 
 function construirCuadrado() {
     let text = "";
     for (let i = 0; i < size; i++) {
@@ -34,6 +34,22 @@ construirCuadrado();
 
 
 
+let sizeHueco = 30;
+function construirCuadradoHueco() {
+    let text = "";
+    for (let i = 0; i < sizeHueco; i++) {
+        for (let j = 0; j < sizeHueco; j++) {
+            if (i === 0 || i === sizeHueco - 1 || j === 0 || j === sizeHueco - 1) {
+                text += "* ";
+            } else {
+                text += "  ";
+            }
+        }
+        text += "\n";
+    }
+    console.log(text);
+}
+construirCuadradoHueco();
 
 
 
