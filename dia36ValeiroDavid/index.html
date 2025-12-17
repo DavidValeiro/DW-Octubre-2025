@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- ? Conjunto de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ? Etiqueta de compatibilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Valeiro Sanjurjo</title>
+    <link rel="icon" type="image/png" href="media/images/favicon.png">
+    <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- ? Tipografía fea con ganas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+    <!-- ? El defer es el wait onload  -->
+</head>
+
+<body>
+    <header>
+            <ul role="tablist">
+                <li role="tab" id="pag-1" class="option active" aria-selected="true">Página 1</li>
+                <li role="tab" id="pag-2" class="option">Página 2</li>
+                <li role="tab" id="pag-3" class="option">Página 3</li>
+                <li role="tab" id="pag-4" class="option">Página 4</li>
+            </ul>
+    </header>
+
+    <main>
+        <div id="div-1" class="content" role="tabpanel">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tarjeta 1</div>
+                        <div class="card-back">
+                            <img src="https://picsum.photos/300/400?1" alt="Imagen 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tarjeta 2</div>
+                        <div class="card-back">
+                            <img src="https://picsum.photos/300/400?2" alt="Imagen 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">Tarjeta 3</div>
+                        <div class="card-back">
+                            <img src="https://picsum.photos/300/400?3" alt="Imagen 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div-2" class="content none" role="tabpanel">
+            <h2>Página 2</h2>
+            <p>Esta es la página 2. Explora más información y recursos disponibles aquí.</p>
+        </div>
+
+        <div id="div-3" class="content none" role="tabpanel">
+            <h2>Página 3</h2>
+            <p>Has llegado a la página 3. Descubre contenido adicional y detalles fascinantes.</p>
+        </div>
+
+        <div id="div-4" class="content none" role="tabpanel">
+            <h2>Página 4</h2>
+            <p>Estás en la página 4. Gracias por visitar mi sitio web.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 David Valeiro Sanjurjo. Todos los derechos reservados.</p>
+    </footer>
+   
+</body>
+
+</html>
