@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.acordeon {
+  width: 60%;
+  max-width: 120em;
+  padding: 2em;
+  background: #e0e0e0;
+  border-radius: 1em;
+  box-shadow: 8px 8px 16px #b8b8b8, -8px -8px 16px #ffffff;
+}
+
+.acordeon .bloque {
+  margin: 0 0 1em;
+  padding: 1em;
+  background: #e0e0e0;
+  border-radius: 1em;
+  box-shadow: 6px 6px 12px #b8b8b8, -6px -6px 12px #ffffff;
+}
+
+.acordeon h2 {
+  margin: 0 0 1em;
+  padding: 1em;
+  cursor: pointer;
+  background: #e0e0e0;
+  border-radius: 1em;
+  box-shadow: inset 4px 4px 8px #b8b8b8, inset -4px -4px 8px #ffffff;
+}
+
+.acordeon .contenido {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.acordeon .contenido.activo {
+  max-height: 500px; 
+  padding: 1em;
+}
