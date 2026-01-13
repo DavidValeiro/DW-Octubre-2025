@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- ? Conjunto de caracteres -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- ? Etiqueta de compatibilidad -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MousIn</title>
+  <link rel="icon" type="image/png" href="" />
+  <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- ? Tipografía fea con ganas -->
+  <!-- ! <link rel="preconnect" href="https://fonts.googleapis.com" AÑADIR FONT DE GOOGLE />  -->
+  <script src="js/main.js" defer></script>
+  <!-- ? El defer es el wait onload  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header home">
+    <h1 class="header__title">MousIn</h1>
+    <nav class="header__nav">
+      <svg class="header__nav-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="inset">
+            <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#b8b8b8" />
+            <feDropShadow dx="-2" dy="-2" stdDeviation="2" flood-color="#ffffff" />
+          </filter>
+        </defs>
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#f5f5f5" stroke-width="10" filter="url(#inset)" />
+        <circle cx="100" cy="100" r="50" fill="#f5f5f5" filter="url(#inset)" />
+      </svg>
+
+      <ul class="header__nav-list is-closed" id="nav-list">
+        <li class="header__nav-item"><a href="#inicio">Home</a></li>
+        <li class="header__nav-item"><a href="catalogo.html">Catálogo</a></li>
+        <li class="header__nav-item"><a href="#carrito">Carrito</a></li>
+        <li class="header__nav-item"><a href="#contacto">Contacto</a></li>
+        <li class="header__nav-item"><a href="#usuario">Usuario</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+</html>
