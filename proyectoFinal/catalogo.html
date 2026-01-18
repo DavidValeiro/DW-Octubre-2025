@@ -30,10 +30,9 @@
       <h1 class="header__title title-general">MousIn</h1>
 
       <ul class="header__nav-list is-closed" id="nav-list">
-        <li class="header__nav-item"><a href="index.html">Home</a></li>
-        <li class="header__nav-item"><a href="catalogo.html">Catálogo</a></li>
-        <li class="header__nav-item"><a href="#contacto">Contacto</a></li>
-        <li class="header__nav-item"><a href="#usuario">Usuario</a></li>
+        <li class="header__nav-item"><a href="index.html" title="home">Home</a></li>
+        <li class="header__nav-item"><a href="#" title="catalogo">Catálogo</a></li>
+        <li class="header__nav-item"><a href="contacto.html" title="contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -57,106 +56,73 @@
     <section class="content__product">
       <h2 class="content__product-main-title">Catálogo</h2>
       <div class="content__product-list">
-        <div class="content__product-item" data-product="mouse">
-          <img class="content__product-img" src="media/images/aryeMouse.png" alt="Ratón 1" />
+<!-- Aqui se insertan los productos del catálogo con todos los datos para llevarse a la siguiente página de detalles. -->
+        <div class="content__product-item" data-product="mouse" data-id="Arye RCC-1" data-price="180€" data-specs="Sensor: 3200 DPI.; Conectividad: Inalámbrica y tipo C.; Batería: Hasta 80h.; Ergonomía: Tamaño pequeño.;" data-description="El ARYE RCC-1 es un ratón gaming inalámbrico de alta gama, diseñado para ofrecer máxima precisión, ligereza extrema y rendimiento competitivo para juegos FPS y otros títulos donde la rapidez y control son clave.">
+          <img class="content__product-img" src="media/images/aryeMouse.png" alt="Ratón aryeMouse" />
           <div class="content__product-text">
             <h3 class="content__product-title">Arye G1</h3>
             <h4 class="content__product-price">180€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
 
-        <div class="content__product-item" data-product="mouse">
-          <img class="content__product-img" src="media/images/mouse.jpg" alt="Ratón 1" />
+        <div class="content__product-item" data-product="mouse" data-id="Mx Master 3" data-price="140€" data-specs="Sensor: 4000 DPI.; Conectividad: 2.4 GHz inalámbrica y Bluetooth.; Batería: Hasta 160h.; Ergonomía: Avanzada.;" data-description="El Logitech MX Master 3 es un ratón inalámbrico ergonómico de alta productividad, diseñado especialmente para trabajos creativos, programación y uso intensivo en ordenador. Destaca por su forma cómoda que se adapta bien a la palma, múltiples botones personalizables y una rueda de desplazamiento MagSpeed con tecnología electromagnética que permite un scroll muy rápido y preciso.">
+          <img loading="lazy" class="content__product-img" src="media/images/mouse.jpg" alt="Ratón Mx Master 3" />
           <div class="content__product-text">
             <h3 class="content__product-title">Mx Master 3</h3>
             <h4 class="content__product-price">140€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
 
-        <div class="content__product-item" data-product="mouse">
-          <img class="content__product-img" src="media/images/aryeMouse.png" alt="Ratón 1" />
-          <div class="content__product-text">
-            <h3 class="content__product-title">Arye G1</h3>
-            <h4 class="content__product-price">180€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
-          </div>
-        </div>
-
-        <div class="content__product-item" data-product="keyboard">
-          <img class="content__product-img" src="media/images/teclado.jpg" alt="Teclado 1" />
+        <div class="content__product-item" data-product="keyboard" data-id="Custom Type 1" data-price="280€" data-specs="Switches: Cherry brown.; Tamaño: 80%.; Conectividad: Cable tipo C.; Iluminación: RGB.;" data-description="Teclado mecánico personalizado con interruptores de alta calidad, retroiluminación RGB y diseño ergonómico para una experiencia de escritura y juego superior. Ideal para gamers y profesionales que buscan rendimiento y estilo.">
+          <img loading="lazy" class="content__product-img" src="media/images/teclado.jpg" alt="Teclado Custom Type 1" />
           <div class="content__product-text">
             <h3 class="content__product-title">Custom type 1</h3>
             <h4 class="content__product-price">280€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
 
-        <div class="content__product-item" data-product="keyboard">
-          <img class="content__product-img" src="media/images/teclado2.jpg" alt="Teclado 2" />
+        <div class="content__product-item" data-product="keyboard" data-id="Custom Type 2" data-price="210€" data-specs="Switches: Cherry blue.; Tamaño: 65%.; Conectividad: Cable tipo C.; Iluminación: ninguna.;" data-description="Teclado mecánico 65% con conectividad por cable tipo C, sin retroiluminación. Ideal para usuarios que prefieren un teclado compacto y silencioso para uso diario.">
+          <img loading="lazy" class="content__product-img" src="media/images/teclado2.jpg" alt="Teclado Custom Type 2" />
           <div class="content__product-text">
             <h3 class="content__product-title">Custom type 2</h3>
             <h4 class="content__product-price">210€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
 
-        <div class="content__product-item" data-product="headset">
-          <img class="content__product-img" src="media/images/auriculares.jpg" alt="Auriculares 1" />
+        <div class="content__product-item" data-product="headset" data-id="Phillips Phidelio" data-price="160€" data-specs="Tipo: over-ear.; Conectividad: Cable jack 3.5.; Micrófono: sí.; Cancelación de ruido: no.;" data-description="Auriculares Phillips Phidelio de tipo over-ear con conectividad por cable, micrófono incorporado y sin cancelación de ruido.">
+          <img loading="lazy" class="content__product-img" src="media/images/auriculares.jpg" alt="Auriculares Phillips Phidelio" />
           <div class="content__product-text">
             <h3 class="content__product-title">Phillips Phidelio</h3>
             <h4 class="content__product-price">160€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
 
-        <div class="content__product-item" data-product="controller">
-          <img class="content__product-img" src="media/images/steamCont.jpg" alt="Controlador 1" />
+        <div class="content__product-item" data-product="controller" data-id="Steam Controller" data-price="60€" data-specs="Conectividad: inalámbrica y Bluetooth.; Batería: Recargable 40h.; Diseño: ergonómico.;" data-description="Controlador Steam inalámbrico con conectividad Bluetooth y batería recargable. Ideal para juegos en PC y Steam.">
+          <img loading="lazy" class="content__product-img" src="media/images/steamCont.jpg" alt="Controlador Steam Controller" />
           <div class="content__product-text">
             <h3 class="content__product-title">Steam controller</h3>
             <h4 class="content__product-price">60€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
 
-        <div class="content__product-item" data-product="controller">
-          <img class="content__product-img" src="media/images/xboxPro.jpg" alt="Controlador 2" />
+        <div class="content__product-item" data-product="controller" data-id="Xbox Pro Controller" data-price="120€" data-specs="Conectividad: inalámbrica y Bluetooth.; Batería: Recargable 40h.; Diseño: ergonómico.;" data-description="Controlador Xbox Pro inalámbrico con conectividad Bluetooth, batería recargable y diseño ergonómico para mayor comodidad durante largas sesiones de juego.">
+          <img loading="lazy" class="content__product-img" src="media/images/xboxPro.jpg" alt="Controlador Xbox Pro Controller" />
           <div class="content__product-text">
             <h3 class="content__product-title">Xbox Pro controller</h3>
             <h4 class="content__product-price">120€</h4>
-            <button class="content__product-button">Añadir al carrito</button>
           </div>
         </div>
-
-        <div class="cart__container">
-          <button class="button__cart"><i class="fa fa-shopping-cart"></i></button>
-          <button class="button__cart-close"><i class="fa fa-times"></i></button>
+<!-- Aqui está el carrito de la compra -->
+        <button class="button__cart" title="abrir carrito"><i class="fa fa-shopping-cart"></i></button>
+        <div class="cart__container is-closed">
+          <button class="button__cart-close" title="cerrar carrito"><i class="fa fa-times"></i></button>
           <div class="cart__items">
-            <div class="cart__selected">
-              <h3 class="cart__selected-name">Placeholder</h3>
-              <h4 class="cart__selected-price">3300€</h4>
-            </div>
-            <div class="cart__selected">
-              <h3 class="cart__selected-name">Placeholder</h3>
-              <h4 class="cart__selected-price">3300€</h4>
-            </div>
-            <div class="cart__selected">
-              <h3 class="cart__selected-name">Placeholder</h3>
-              <h4 class="cart__selected-price">3300€</h4>
-            </div>
-            <div class="cart__selected">
-              <h3 class="cart__selected-name">Placeholder</h3>
-              <h4 class="cart__selected-price">3300€</h4>
-            </div>
           </div>
           <div class="cart__buying">
             <div class="cart__total">Total: <span class="cart__total-price">0€</span></div>
-            <button class="content__product-button">Comprar</button>
+            <button class="cart__buying-button" title="realizar compra">Comprar</button>
           </div>
         </div>
-
-
       </div>
     </section>
   </main>

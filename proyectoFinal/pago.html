@@ -1,38 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- ? Conjunto de caracteres -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- ? Etiqueta de compatibilidad -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MousIn</title>
-    <link rel="icon" type="image/png" href="" />
-    <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <!-- ? Tipografía fea con ganas -->
-    <!-- ! <link rel="preconnect" href="https://fonts.googleapis.com" />  --> AÑADIR FONT DE GOOGLE
-    <script src="js/main.js" defer></script>
-    <!-- ? El defer es el wait onload  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <svg class="header__nav-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="100" r="70" fill="none" stroke="black" stroke-width="10" />
-          <circle cx="100" cy="100" r="50" fill="black" />
-        </svg>
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#inicio">Home</a></li>
-          <li class="header__nav-item"><a href="#catalogo">Catálogo</a></li>
-          <li class="header__nav-item"><a href="#contacto">Contacto</a></li>
-          <li class="header__nav-item"><a href="#usuario">Usuario</a></li>
-        </ul>
-        <i class="header__nav-ham fa fa-bars" alt=""></i>
-      </nav>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <!-- ? Conjunto de caracteres -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- ? Etiqueta de compatibilidad -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MousIn</title>
+  <link rel="icon" type="image/png" href="" />
+  <!-- ? Favicon preferible en Svg para el reescalado en las distintas reiteraciones del icono -->
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- ? Tipografía fea con ganas -->
+  <!-- ! <link rel="preconnect" href="https://fonts.googleapis.com" />  -->
+  <script src="js/main.js" defer></script>
+  <!-- ? El defer es el wait onload  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav nav-general">
+      <svg class="header__nav-logo-general" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="70" fill="none" stroke="#2c2c2c" stroke-width="10" filter="url(#inset)" />
+        <circle cx="100" cy="100" r="50" fill="#2c2c2c" filter="url(#inset)" />
+      </svg>
+      <h1 class="header__title title-general">MousIn</h1>
+
+      <ul class="header__nav-list is-closed" id="nav-list">
+        <li class="header__nav-item"><a href="index.html" title="Home">Home</a></li>
+        <li class="header__nav-item"><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
+        <li class="header__nav-item"><a href="#contacto" title="Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="payment">
+    <button class="payment__back-button" title="volver atrás">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <section class="payment__container">
+      <h2 class="payment__title">Procesar Pago</h2>
+
+      <!-- Las restricciones de este formulario han sido generadas por petición a github copilot usando gpt 4.1 -->
+      <form class="payment__form" id="payment-form" action="#" method="post"> 
+        <label class="payment__form-label" for="card-number">Número de Tarjeta:</label>
+        <input
+          class="payment__form-input"
+          type="text"
+          id="card-number"
+          name="card-number"
+          required
+          inputmode="numeric"
+          pattern="\d{13,19}"
+          maxlength="19"
+          autocomplete="cc-number"
+          placeholder="1234 5678 9012 3456"
+        />
+
+        <label class="payment__form-label" for="expiry-date">Fecha de Expiración:</label>
+        <input
+          class="payment__form-input"
+          type="text"
+          id="expiry-date"
+          name="expiry-date"
+          placeholder="MM/AA"
+          required
+          inputmode="numeric"
+          pattern="(0[1-9]|1[0-2])\/\d{2}"
+          maxlength="5"
+          autocomplete="cc-exp"
+        />
+
+        <label class="payment__form-label" for="cvv">CVV:</label>
+        <input
+          class="payment__form-input"
+          type="text"
+          id="cvv"
+          name="cvv"
+          required
+          inputmode="numeric"
+          pattern="\d{3,4}"
+          maxlength="4"
+          autocomplete="cc-csc"
+          placeholder="123"
+        />
+
+        <label class="payment__form-label" for="cardholder-name">Nombre del Titular:</label>
+        <input
+          class="payment__form-input"
+          type="text"
+          id="cardholder-name"
+          name="cardholder-name"
+          required
+          pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,50}"
+          maxlength="50"
+          autocomplete="cc-name"
+          placeholder="Nombre Apellido"
+        />
+
+        <button type="submit" class="payment__submit-button" name="submit" title="Procesar pago">
+          Pagar Ahora
+        </button>
+      </form>
+    </section>
+
+    <div class="modal__success hidden">
+      <div class="modal__content-success">
+        <h2 class="modal__title-success">¡Pago Exitoso!</h2>
+        <p class="modal__message-success">
+          Gracias por su compra. Su pago ha sido procesado correctamente.
+        </p>
+        <button class="modal__button-success" title="Aceptar mensaje de confirmacion">Aceptar</button>
+      </div>
+    </div>
+  </main>
+</body>
 
 </html>

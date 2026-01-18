@@ -29,42 +29,27 @@
       <ul class="header__nav-list is-closed" id="nav-list">
         <li class="header__nav-item"><a href="index.html" title="Home">Home</a></li>
         <li class="header__nav-item"><a href="catalogo.html" title="Catálogo">Catálogo</a></li>
-        <li class="header__nav-item"><a href="contacto.html" title="Contacto">Contacto</a></li>
+        <li class="header__nav-item"><a href="#" title="Contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <button class="product__back fa fa-arrow-left"></button>
-    <section class="product__detail-container">
-      <div class="product__detail-content">
-        <img class="product__detail-img" src="" alt="Imagen del producto" />
-        <div class="product__detail-specs">
-          <h3 class="product__detail-specs-title">Especificaciones Técnicas</h3>
-          <ul class="product__detail-specs-list">
-          </ul>
-        </div>
-        <div class="product__detail-info">
-          <h2 class="product__detail-name"></h2>
-          <p class="product__detail-description">
-            
-          </p>
-          <span class="product__detail-price"></span>
-          <button class="content__product-button" title="Agregar al carrito">Agregar al Carrito</button>
-        </div>
-      </div>
-    </section>
+  <main class="contact">
+    <section class="contact__container" id="contacto">
+      <h2 class="contact__title">Contacto</h2>
+      <form class="contact__form" action="#" method="post">
+        <label class="contact__form-label" for="nombre">Nombre</label>
+        <input class="contact__form-input" type="text" id="nombre" name="nombre" required />
 
-    <button class="button__cart" title="abrir carrito"><i class="fa fa-shopping-cart"></i></button>
-        <div class="cart__container is-closed">
-          <button class="button__cart-close" title="cerrar carrito"><i class="fa fa-times"></i></button>
-          <div class="cart__items">
-          </div>
-          <div class="cart__buying">
-            <div class="cart__total">Total: <span class="cart__total-price">0€</span></div>
-            <button class="cart__buying-button" title="realizar compra">Comprar</button>
-          </div>
-        </div>
+        <label class="contact__form-label" for="email">Correo Electrónico</label>
+        <input class="contact__form-input" type="email" id="email" name="email" required />
+
+        <label class="contact__form-label" for="mensaje">Mensaje</label>
+        <textarea class="contact__form-textarea" id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit" class="contact__form-button" title="Enviar mensaje">Enviar</button>
+      </form>
+    </section>
   </main>
   </body>
 
